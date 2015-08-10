@@ -1,0 +1,26 @@
+h1.headline {
+  font-size: 62px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.slide-introcard h1.headline {
+  font-size: 102px;
+}
+
+.slide-example-slide h1.headline {
+  font-size: 36px;
+}
+
+.slide ul li {
+  text-align: left;
+  font-size: 36px;
+}
+
+.slide ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
