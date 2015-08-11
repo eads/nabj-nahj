@@ -1,5 +1,10 @@
 {% extends "_base.html" %}
 
+{% block library_css %}
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
+{{ super() }}
+{% endblock %}
+
 {#
 
 This file should rarely be edited. Instead, edit or add files in the _slide_templates directory.

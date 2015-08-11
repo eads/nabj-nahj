@@ -1,17 +1,41 @@
+body {
+  font-family: 'Georgia', serif;
+}
+
+h1, h2 {
+  text-shadow: 0 0 5px #333;
+}
+
+.invert-text h1, .invert-text h2 {
+  color: #000;
+  text-shadow: 0 0 5px #fff;
+}
+
 h1.headline {
-  font-size: 62px;
-  font-weight: bold;
+  font-size: 52px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 42px;
 }
 
-.slide-introcard h1.headline {
-  font-size: 102px;
+.slide-chapter-prologue h1.headline,
+.slide-titlecard h1.headline, 
+.slide-chapter-title h1.headline {
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
 }
 
-.slide-example-slide h1.headline {
+
+.slide-chapter-title h1.headline {
+  font-size: 70px;
+}
+
+.slide-chapter-prologue h1.headline {
+  font-size: 40px;
+}
+
+.slide-example-list h1.headline {
   font-size: 36px;
 }
 
@@ -24,3 +48,12 @@ h2 {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.dark-overlay .img-container {
+  opacity: 0.3;
+}
+
+.gray-overlay .img-container {
+  opacity: 0.45;
+}
+
