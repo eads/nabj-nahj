@@ -50,9 +50,26 @@ h2 {
 }
 .slide.photo-overlay {
   background-color: #222;
+}
+.slide.photo-overlay .content {
   color: #fff;
   text-shadow: 0 0 5px #000;
 }
 .photo-overlay .img-container {
   opacity: 0.8;
+}
+
+.credits {
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  padding: 0 5px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 700;
 }
