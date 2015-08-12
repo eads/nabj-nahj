@@ -1,14 +1,12 @@
 body {
   font-family: 'Georgia', serif;
-}
-
-h1, h2 {
-  text-shadow: 0 0 5px #333;
+  background-image: none;
+  color: #111;
+  background-color: rgb(247, 242, 230);
 }
 
 .invert-text h1, .invert-text h2 {
   color: #000;
-  text-shadow: 0 0 5px #fff;
 }
 
 h1.headline {
@@ -22,8 +20,10 @@ h2 {
 .slide-chapter-prologue h1.headline,
 .slide-titlecard h1.headline, 
 .slide-chapter-title h1.headline {
-  font-style: italic;
   font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(253, 75, 28);
 }
 
 
@@ -48,12 +48,11 @@ h2 {
   max-width: 800px;
   margin: 0 auto;
 }
-
-.dark-overlay .img-container {
-  opacity: 0.3;
+.slide.photo-overlay {
+  background-color: #222;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
 }
-
-.gray-overlay .img-container {
-  opacity: 0.45;
+.photo-overlay .img-container {
+  opacity: 0.8;
 }
-
