@@ -33,11 +33,11 @@ body {
 }
 
 h1.headline {
-  font-size: 52px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 38px;
 }
 
 hr {
@@ -104,4 +104,13 @@ hr {
   line-height: 21px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.lang-mandarin {
+  font-family: "微軟正黑體", sans-serif;
+}
+
+.lang-mandarin hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
