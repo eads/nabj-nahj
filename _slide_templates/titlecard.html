@@ -1,0 +1,25 @@
+{% extends '_slide_templates/_taipei_slide_base.html' %}
+
+{% block slide %}
+<div class="content">
+  <div class="content-inner">
+    {% if slide.headline %}
+    <h1 class="headline">{{ slide.headline|smartypants|safe }}</h1>
+    {% endif %}
+
+    {% if slide.file %}
+    {{ render_file(slide.file)|markdown|smartypants|safe }}
+    {% endif %}
+
+    {% if slide.content %}
+    {{ slide.content|markdown|smartypants|safe }}
+    {% endif %}
+
+    <div class="go-button">
+      <button class="btn btn-warning nav-button slide-next">{{ start_msg }} <i class="fa fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+{% endblock slide %}
+
+{% block navbuttons %}{% endblock navbuttons %}

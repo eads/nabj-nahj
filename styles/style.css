@@ -3,10 +3,33 @@ body {
   background-image: none;
   color: #111;
   background-color: rgb(247, 242, 230);
+  font-size: 28px;
 }
 
-.invert-text h1, .invert-text h2 {
-  color: #000;
+.btn-warning {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  background-color: rgb(253, 75, 28);
+  border: none;
+  text-transform: uppercase;
+  border-radius: 17px;
+}
+.btn-warning:hover {
+  background-color: rgb(200, 65, 17);
+}
+
+
+.content a,
+.credits a {
+  text-decoration: none;
+  color: rgb(253, 75, 28);
+  border-bottom: 1px dotted rgb(253, 75, 28);
+}
+.content a:hover,
+.credits a:hover {
+  text-decoration: none;
+  color: rgb(200, 65, 17);
+  border-bottom: 1px solid rgb(200, 65, 17);
 }
 
 h1.headline {
@@ -17,6 +40,14 @@ h2 {
   font-size: 42px;
 }
 
+hr {
+  border-color: #bbb;
+}
+
+.nav-buttons .nav-button {
+  color: rgb(200, 195, 188);
+  opacity: 0.5;
+}
 .slide-chapter-prologue h1.headline,
 .slide-titlecard h1.headline, 
 .slide-chapter-title h1.headline {
@@ -25,7 +56,6 @@ h2 {
   font-weight: 700;
   color: rgb(253, 75, 28);
 }
-
 
 .slide-chapter-title h1.headline {
   font-size: 70px;
@@ -41,7 +71,6 @@ h2 {
 
 .slide ul li {
   text-align: left;
-  font-size: 36px;
 }
 
 .slide ul {
@@ -53,23 +82,26 @@ h2 {
 }
 .slide.photo-overlay .content {
   color: #fff;
-  text-shadow: 0 0 5px #000;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
-.photo-overlay .img-container {
+.slide.photo-overlay .img-container {
   opacity: 0.8;
+}
+.slide.photo-overlay hr {
+  border-color: #fff;
 }
 
 .credits {
   position: absolute;
-  color: #fff;
-  background-color: #000;
+  color: #333;
+  background-color: rgb(247, 242, 230);
   bottom: 0;
   right: 0;
   z-index: 99;
-  padding: 0 5px;
+  padding: 6px 10px;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  line-height: 28px;
-  font-size: 16px;
+  line-height: 21px;
+  font-size: 15px;
   font-weight: 700;
 }

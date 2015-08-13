@@ -1,1 +1,27 @@
-{% extends '_slide_templates/_slide_base.html' %}
+{% extends '_slide_templates/_taipei_slide_base.html' %}
+
+{% block slide %}
+<div class="content">
+  <div class="content-inner">
+    {% if slide.headline %}
+    <h1 class="headline">{{ slide.headline|smartypants|safe }}</h1>
+    {% endif %}
+
+    <div class="row">
+      <div class="col-md-6">
+        {% if slide.content %}
+        {{ slide.content|smartypants|markdown|safe }}
+        {% endif %}
+      </div>
+
+      <div class="col-md-6">
+        {% if slide.content_mandarin %}
+        {{ slide.content_mandarin|smartypants|markdown|safe }}
+        {% endif %}
+      </div>
+    </div>
+
+
+  </div>
+</div>
+{% endblock slide %}
