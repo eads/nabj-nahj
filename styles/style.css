@@ -69,23 +69,23 @@ hr {
   font-size: 36px;
 }
 
-.slide ul li {
+.slide ul li, .slide ol li {
   text-align: left;
 }
 
-.slide ul {
+.slide ul, .slide ol {
   max-width: 800px;
   margin: 0 auto;
 }
 .slide.photo-overlay {
-  background-color: #222;
+  background-color: #000;
 }
 .slide.photo-overlay .content {
   color: #fff;
   text-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
 .slide.photo-overlay .img-container {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .slide.photo-overlay hr {
   border-color: #fff;

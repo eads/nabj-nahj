@@ -15,6 +15,20 @@
     {{ slide.content|markdown|smartypants|safe }}
     {% endif %}
 
+    {% if slide.headline_mandarin or slide.content_mandarin %}
+    <div class="lang-mandarin">
+      <hr/>
+
+      {% if slide.headline_mandarin %}
+      <h1 class="headline">{{ slide.headline_mandarin|smartypants|safe }}</h1>
+      {% endif %}
+
+      {% if slide.content_mandarin %}
+      {{ slide.content_mandarin|smartypants|markdown|safe }}
+      {% endif %}
+    </div>
+    {% endif %}
+
     <div class="go-button">
       <button class="btn btn-warning nav-button slide-next">{{ start_msg }} <i class="fa fa-chevron-right"></i></button>
     </div>
