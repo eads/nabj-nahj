@@ -39,5 +39,5 @@ S3_BUCKETS = {
 # Default template variables
 DEFAULT_CONTEXT = {
     'name': 'dbootcamp-taipei-keynote',
-    'title': 'DBootcamp Taipei Keynote'
+    'title': 'Choose Your Own Adventure: Questions for Internet journalism teams'
 }

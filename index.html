@@ -1,7 +1,18 @@
 {% extends "_base.html" %}
 
+
+{% block opengraph %}
+<meta property="og:url" content="http://recoveredfactory.net/adventure/index.html" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{ opengraph_image }}" />
+<meta property="og:description" content="{{ opengraph_description }}" />
+{% endblock opengraph %}
+
 {% block library_css %}
+{#
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+#}
 {{ super() }}
 {% endblock %}
 
