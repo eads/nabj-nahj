@@ -8,7 +8,7 @@
     data-imgLiquid-verticalAlign="{{ slide.media_vertical_align }}"
     {% endif %}
     {% if slide.media_horizontal_align %}
-    data-imgLiquid-horizontalAlign="{{ slide.media_vertical_align }}"
+    data-imgLiquid-horizontalAlign="{{ slide.media_horizontal_align }}"
     {% endif %}
     data-background-image="{{ slide.media_url }}">
   <img{% if loop_index == 0 %} src="{{ slide.media_url }}"{% endif %} />
