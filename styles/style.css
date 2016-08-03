@@ -75,7 +75,9 @@ hr {
 
 .slide ul, .slide ol {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
+  display:-moz-inline-stack;
+  display:inline-block;
 }
 .slide.photo-overlay {
   background-color: #000;
